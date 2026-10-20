@@ -3,25 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="TechWorld - Cửa hàng đồ điện tử và công nghệ chính hãng: laptop, điện thoại, tai nghe, đồng hồ thông minh, phụ kiện gaming.">
-  <title>TechWorld - Cửa Hàng Đồ Điện Tử & Công Nghệ</title>
+  <meta name="description" content="TechWorld - Hệ thống bán lẻ thiết bị công nghệ chính hãng hàng đầu Việt Nam: Laptop, Smartphone, Âm thanh, Smartwatch, Phụ kiện gaming cao cấp.">
+  <title>TechWorld - Cửa Hàng Đồ Điện Tử &amp; Công Nghệ Đỉnh Cao</title>
 
+  <!-- Google Fonts: Be Vietnam Pro & Inter (Chuẩn Tiếng Việt 100%, sắc nét, không lỗi dấu) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
   <!-- Animate.css Library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  
   <!-- AOS (Animate On Scroll) CSS Library -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-  <!-- CSS riêng -->
+  
+  <!-- File CSS Chính -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Loader màn hình thuần CSS -->
+  <!-- Màn hình chờ Loader thuần CSS cao cấp -->
   <div class="page-loader" aria-hidden="true">
     <div class="loader-spinner">
-      <div class="loader-logo">Tech<span>World</span></div>
+      <div class="loader-brand">
+        <i class="fa-solid fa-microchip loader-icon"></i>
+        <div class="loader-logo">Tech<span>World</span></div>
+      </div>
       <div class="loader-bar"></div>
+      <p class="loader-text">Khởi tạo trải nghiệm công nghệ cao cấp...</p>
     </div>
   </div>
+
+  <!-- Thanh thông báo trên cùng (Top Banner Bar) -->
+  <aside class="top-banner" aria-label="Thông báo ưu đãi">
+    <div class="top-banner-inner">
+      <span class="top-badge"><i class="fa-solid fa-bolt"></i> HOT DEAL 2026</span>
+      <p class="top-text">Chào mừng đại lễ công nghệ: Giảm thêm tới <strong>1.500.000đ</strong> khi thanh toán qua VNPay / Apple Pay! Mã: <code>TECHPRO</code></p>
+      <div class="top-links">
+        <a href="#thu-cu"><i class="fa-solid fa-arrows-rotate"></i> Thu cũ trợ giá 2TR</a>
+        <a href="#footer"><i class="fa-solid fa-headset"></i> Hotline: 1900 6868</a>
+      </div>
+    </div>
+  </aside>
 
   <!-- Bộ lọc thuần CSS: radio ẩn điều khiển tab lọc -->
   <input type="radio" class="sr-radio" name="tab" id="tab-all" checked>
@@ -32,43 +58,54 @@
   <!-- ===================== HEADER ===================== -->
   <header class="site-header">
     <nav class="navbar" aria-label="Điều hướng chính">
-      <a href="#" class="logo">Tech<span>World</span></a>
+      <a href="#" class="logo">
+        <div class="logo-icon-wrap">
+          <i class="fa-solid fa-bolt-lightning"></i>
+        </div>
+        <div class="logo-text">Tech<span>World</span></div>
+      </a>
 
       <ul class="nav-links">
-        <li><a href="#hero">Trang Chủ</a></li>
-        <li><a href="#san-pham">Sản Phẩm</a></li>
-        <li><a href="#thu-cu">Thu Cũ Đổi Mới</a></li>
-        <li><a href="#cam-ket">Dịch Vụ</a></li>
-        <li><a href="#footer">Liên Hệ</a></li>
+        <li><a href="#hero" class="active"><i class="fa-solid fa-house"></i> Trang Chủ</a></li>
+        <li><a href="#san-pham"><i class="fa-solid fa-laptop-code"></i> Sản Phẩm</a></li>
+        <li><a href="#thu-cu"><i class="fa-solid fa-arrows-spin"></i> Thu Cũ Đổi Mới</a></li>
+        <li><a href="#cam-ket"><i class="fa-solid fa-shield-halved"></i> Dịch Vụ</a></li>
+        <li><a href="#footer"><i class="fa-solid fa-phone"></i> Liên Hệ</a></li>
       </ul>
 
+      <!-- Thanh tìm kiếm thông minh -->
       <form class="search-box" role="search" action="#" method="get">
-        <input type="search" name="q" placeholder="Tìm kiếm sản phẩm..." aria-label="Tìm kiếm">
-        <button type="submit" aria-label="Tìm">🔍</button>
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="search" name="q" placeholder="Tìm kiếm iPhone 16, RTX 4060, M4 Pro..." aria-label="Tìm kiếm sản phẩm">
+        <button type="submit" aria-label="Tìm kiếm"><i class="fa-solid fa-arrow-right"></i></button>
       </form>
 
+      <!-- Nhóm icon hành động -->
       <div class="nav-actions">
-        <a href="#hero" class="icon-btn icon-btn--alert" aria-label="Thông báo: 3 thông báo mới">
-          🔔 <span class="cart-count">3</span>
+        <a href="#hero" class="icon-btn icon-btn--alert" aria-label="Thông báo: 3 tin khuyến mãi mới">
+          <i class="fa-regular fa-bell"></i>
+          <span class="cart-count">3</span>
         </a>
         <a href="#san-pham" class="icon-btn icon-btn--wish" aria-label="Danh sách yêu thích">
-          ❤️ <span class="cart-count">0</span>
+          <i class="fa-regular fa-heart"></i>
+          <span class="cart-count">0</span>
         </a>
         <a href="#san-pham" class="icon-btn cart" aria-label="Giỏ hàng: 0 sản phẩm">
-          🛒 <span class="cart-count">0</span>
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-count">0</span>
         </a>
       </div>
     </nav>
 
-    <!-- Thanh danh mục nhanh -->
-    <nav class="category-bar" aria-label="Danh mục sản phẩm">
+    <!-- Thanh danh mục nhanh Pill Bar -->
+    <nav class="category-bar" aria-label="Danh mục sản phẩm nhanh">
       <ul class="category-list">
-        <li><a class="cat-link" href="#c-all">🛍️ Tất Cả Danh Mục</a></li>
-        <li><a class="cat-link" href="#c-laptop">💻 Laptop</a></li>
-        <li><a class="cat-link" href="#c-phone">📱 Điện Thoại</a></li>
-        <li><a class="cat-link" href="#c-audio">🎧 Tai Nghe & Loa</a></li>
-        <li><a class="cat-link" href="#c-watch">⌚ Đồng Hồ Thông Minh</a></li>
-        <li><a class="cat-link" href="#c-gaming">🎮 Phụ Kiện Gaming</a></li>
+        <li><a class="cat-link" href="#c-all"><i class="fa-solid fa-border-all"></i> Tất Cả</a></li>
+        <li><a class="cat-link" href="#c-laptop"><i class="fa-solid fa-laptop"></i> Laptop &amp; PC</a></li>
+        <li><a class="cat-link" href="#c-phone"><i class="fa-solid fa-mobile-screen-button"></i> Điện Thoại</a></li>
+        <li><a class="cat-link" href="#c-audio"><i class="fa-solid fa-headphones-simple"></i> Tai Nghe &amp; Loa</a></li>
+        <li><a class="cat-link" href="#c-watch"><i class="fa-solid fa-clock"></i> Đồng Hồ Smart</a></li>
+        <li><a class="cat-link" href="#c-gaming"><i class="fa-solid fa-gamepad"></i> Phụ Kiện Gaming</a></li>
       </ul>
     </nav>
   </header>
@@ -76,36 +113,138 @@
   <main>
     <!-- ===================== SECTION 1: HERO ===================== -->
     <section id="hero" class="hero">
+      <div class="hero-backdrop-glow"></div>
       <div class="hero-inner">
+        <!-- Cột trái: Giới thiệu & Kêu gọi hành động -->
         <div class="hero-content">
-          <h1 class="animate__animated animate__fadeInLeft">Siêu Phẩm Công Nghệ 2026 - Giảm Đến 30%</h1>
-          <p class="animate__animated animate__fadeInUp">Trải nghiệm hiệu năng đỉnh cao với những thiết bị công nghệ hot nhất, chính hãng, giá tốt nhất thị trường.</p>
+          <div class="hero-tag animate__animated animate__fadeInDown">
+            <span class="pulse-dot"></span> ĐỈNH CAO CÔNG NGHỆ 2026
+          </div>
+          
+          <h1 class="animate__animated animate__fadeInLeft">
+            Nâng Tầm Trải Nghiệm <br>
+            <span class="gradient-text">Thiết Bị Đỉnh Cao</span>
+          </h1>
+          
+          <p class="hero-desc animate__animated animate__fadeInUp">
+            Sở hữu ngay các sản phẩm công nghệ thế hệ mới nhất với chip AI siêu tốc, 
+            thiết kế tương lai cùng cam kết 100% chính hãng, bảo hành 1 đổi 1 trong 30 ngày.
+          </p>
 
-          <ul class="hero-badges animate__animated animate__fadeInUp animate__delay-1s" aria-label="Quyền lợi nổi bật">
-            <li>🚚 Free Ship 0đ</li>
-            <li>💳 Trả Góp 0%</li>
-            <li>🛡️ Bảo Hành 24T</li>
+          <!-- Huy hiệu quyền lợi -->
+          <ul class="hero-badges animate__animated animate__fadeInUp animate__delay-1s" aria-label="Quyền lợi khách hàng">
+            <li><i class="fa-solid fa-truck-fast"></i> Giao siêu tốc 2H</li>
+            <li><i class="fa-solid fa-credit-card"></i> Trả góp 0% lãi suất</li>
+            <li><i class="fa-solid fa-shield-check"></i> Bảo hành vàng 24T</li>
+            <li><i class="fa-solid fa-arrows-rotate"></i> Trợ giá thu cũ 2 Triệu</li>
           </ul>
 
-          <a href="#san-pham" class="btn-cta animate__animated animate__fadeIn animate__delay-1s">Khám Phá Ngay</a>
+          <div class="hero-actions animate__animated animate__fadeInUp animate__delay-1s">
+            <a href="#san-pham" class="btn-cta btn-cta--primary">
+              <i class="fa-solid fa-basket-shopping"></i> Khám Phá Sản Phẩm
+            </a>
+            <a href="#thu-cu" class="btn-cta btn-cta--secondary">
+              <i class="fa-solid fa-bolt"></i> Ưu Đãi Thu Cũ
+            </a>
+          </div>
+
+          <!-- Thông số chứng thực ấn tượng -->
+          <div class="hero-stats animate__animated animate__fadeInUp animate__delay-1s">
+            <div class="stat-item">
+              <strong>50K+</strong>
+              <span>Khách Hài Lòng</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <strong>100%</strong>
+              <span>Chính Hãng VN/A</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <strong>4.9 <i class="fa-solid fa-star gold-star"></i></strong>
+              <span>Đánh Giá Uy Tín</span>
+            </div>
+          </div>
         </div>
 
-        <aside class="flash-sale animate__animated animate__fadeInRight" aria-label="Flash Sale">
-          <h2 class="flash-title">⚡ Flash Sale Hôm Nay</h2>
-          <p class="flash-sub">Kết thúc sau</p>
-          <div class="countdown" role="timer" aria-label="Flash Sale còn khoảng 2 giờ 45 phút">
-            <div class="time-box"><strong class="cd-h"><span class="cd-fallback">02</span></strong><span>Giờ</span></div>
-            <div class="time-box"><strong class="cd-m"><span class="cd-fallback">45</span></strong><span>Phút</span></div>
-            <div class="time-box"><strong class="cd-s"><span class="cd-fallback">59</span></strong><span>Giây</span></div>
+        <!-- Cột phải: Khối Flash Sale Công Nghệ Kính Mờ -->
+        <aside class="flash-sale-wrapper animate__animated animate__fadeInRight" aria-label="Khu vực Flash Sale Hôm Nay">
+          <div class="flash-sale">
+            <div class="flash-header">
+              <div class="flash-badge">
+                <i class="fa-solid fa-bolt-lightning flash-pulse"></i> FLASH SALE
+              </div>
+              <span class="flash-live-dot">LIVE NOW</span>
+            </div>
+
+            <p class="flash-sub">Cơ hội săn deal giảm giá sốc đến 45% trong ngày</p>
+
+            <!-- Đồng hồ đếm ngược Flash Sale bằng CSS Animation @property -->
+            <div class="countdown" role="timer" aria-label="Flash Sale còn 2 giờ 45 phút 59 giây">
+              <div class="time-box">
+                <strong class="cd-h"><span class="cd-fallback">02</span></strong>
+                <span>Giờ</span>
+              </div>
+              <span class="time-sep">:</span>
+              <div class="time-box">
+                <strong class="cd-m"><span class="cd-fallback">45</span></strong>
+                <span>Phút</span>
+              </div>
+              <span class="time-sep">:</span>
+              <div class="time-box">
+                <strong class="cd-s"><span class="cd-fallback">59</span></strong>
+                <span>Giây</span>
+              </div>
+            </div>
+
+            <!-- Thẻ sản phẩm nổi bật trong Flash Sale -->
+            <div class="flash-featured-item">
+              <div class="flash-thumb">
+                <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=500&auto=format&fit=crop&q=80" alt="Laptop Gaming X15 ROG" loading="lazy">
+                <span class="flash-discount">-20%</span>
+              </div>
+              <div class="flash-info">
+                <h4>Laptop Gaming X15 RTX 4060</h4>
+                <div class="flash-prices">
+                  <span class="curr-price">29.990.000đ</span>
+                  <del class="old-price">37.490.000đ</del>
+                </div>
+                <div class="flash-stock-bar">
+                  <div class="progress" aria-hidden="true"><span style="width: 78%"></span></div>
+                  <div class="progress-labels">
+                    <span>Đã bán: <strong>78</strong>/100</span>
+                    <span class="text-hurry">🔥 Sắp hết hàng</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a href="#san-pham" class="flash-btn">
+              Xem Tất Cả Deal Flash Sale <i class="fa-solid fa-arrow-right"></i>
+            </a>
           </div>
-          <p class="flash-sold">Đã bán 78% suất ưu đãi</p>
-          <div class="progress" aria-hidden="true"><span style="width: 78%"></span></div>
         </aside>
       </div>
     </section>
 
+    <!-- ===================== SECTION: ĐỐI TÁC THƯƠNG HIỆU ===================== -->
+    <section class="brand-bar" aria-label="Thương hiệu đối tác phân phối chính hãng">
+      <div class="brand-inner">
+        <span class="brand-title">ĐỐI TÁC CHIẾN LƯỢC:</span>
+        <div class="brand-track">
+          <span class="brand-pill"><i class="fa-brands fa-apple"></i> Apple Authorised</span>
+          <span class="brand-pill"><i class="fa-solid fa-microchip"></i> Intel Core Ultra</span>
+          <span class="brand-pill"><i class="fa-solid fa-gamepad"></i> ASUS ROG</span>
+          <span class="brand-pill"><i class="fa-brands fa-playstation"></i> Sony PlayStation</span>
+          <span class="brand-pill"><i class="fa-solid fa-mobile"></i> Samsung Galaxy</span>
+          <span class="brand-pill"><i class="fa-solid fa-computer"></i> Dell Alienware</span>
+          <span class="brand-pill"><i class="fa-solid fa-keyboard"></i> Logitech G</span>
+        </div>
+      </div>
+    </section>
+
     <!-- ===================== SECTION 2: SẢN PHẨM ===================== -->
-    <section id="san-pham" class="products" data-aos="fade-up">
+    <section id="san-pham" class="products">
       <!-- Neo đích cho bộ lọc danh mục (:target) -->
       <span class="cat-anchor" id="c-all"></span>
       <span class="cat-anchor" id="c-laptop"></span>
@@ -113,269 +252,804 @@
       <span class="cat-anchor" id="c-audio"></span>
       <span class="cat-anchor" id="c-watch"></span>
       <span class="cat-anchor" id="c-gaming"></span>
-      <h2 class="section-title" data-aos="fade-right">Sản Phẩm Bán Chạy</h2>
 
-      <!-- Filter Tabs -->
-      <div class="filter-bar" role="group" aria-label="Lọc sản phẩm">
-        <label class="filter-tab" for="tab-all">Tất Cả</label>
-        <label class="filter-tab" for="tab-bestseller">🔥 Bán Chạy</label>
-        <label class="filter-tab" for="tab-new">✨ Mới Ra Mắt</label>
-        <label class="filter-tab" for="tab-sale">💥 Khuyến Mãi Hot</label>
+      <div class="section-heading">
+        <span class="section-subtitle"><i class="fa-solid fa-fire"></i> KHÁM PHÁ CÔNG NGHỆ</span>
+        <h2 class="section-title">Hệ Sinh Thái Thiết Bị Bán Chạy</h2>
+        <p class="section-desc">Lựa chọn những thiết bị công nghệ đỉnh cao được các chuyên gia công nghệ và khách hàng đánh giá cao nhất trong năm 2026.</p>
       </div>
 
+      <!-- Filter Tabs thanh lọc sản phẩm -->
+      <div class="filter-bar" role="group" aria-label="Bộ lọc tiêu chí sản phẩm">
+        <label class="filter-tab" for="tab-all">
+          <i class="fa-solid fa-layer-group"></i> Tất Cả
+        </label>
+        <label class="filter-tab" for="tab-bestseller">
+          <i class="fa-solid fa-fire-flame-curved text-danger"></i> 🔥 Bán Chạy
+        </label>
+        <label class="filter-tab" for="tab-new">
+          <i class="fa-solid fa-wand-magic-sparkles text-accent"></i> ✨ Mới Ra Mắt
+        </label>
+        <label class="filter-tab" for="tab-sale">
+          <i class="fa-solid fa-tags text-warning"></i> 💥 Khuyến Mãi Hot
+        </label>
+      </div>
+
+      <!-- Lưới danh sách sản phẩm -->
       <div class="product-grid" id="product-grid">
 
-        <article class="product-card" data-category="laptop" data-tags="bestseller sale" data-aos="fade-up" data-aos-delay="100">
-          <span class="badge badge--sale">-20%</span>
-          <div class="product-img" aria-hidden="true">💻</div>
-          <p class="product-cat">Laptop</p>
-          <h3>Laptop Gaming X15</h3>
-          <p class="desc">Core i7, RTX 4060, RAM 16GB, màn hình 144Hz.</p>
-          <p class="rating"><span class="stars" aria-hidden="true">⭐⭐⭐⭐⭐</span> 4.9/5 - 128 đánh giá</p>
-          <p class="stock stock--in">Còn hàng</p>
-          <p class="price-row"><span class="price">29.990.000đ</span><del class="old-price">37.490.000đ</del></p>
+        <!-- Card 1: Laptop Gaming -->
+        <article class="product-card" data-category="laptop" data-tags="bestseller sale">
+          <div class="badge badge--sale"><i class="fa-solid fa-bolt"></i> GIẢM 20%</div>
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?w=500&auto=format&fit=crop&q=80" alt="Laptop Gaming X15 ROG Edition" loading="lazy">
+            <div class="img-overlay-action">
+              <span class="quick-view-btn"><i class="fa-regular fa-eye"></i> Xem Nhanh</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="product-cat"><i class="fa-solid fa-laptop"></i> Laptop Gaming</span>
+            <h3>Laptop Gaming X15 ROG Edition</h3>
+            <div class="product-specs">
+              <span>i7-14700H</span>
+              <span>RTX 4060 8GB</span>
+              <span>16GB DDR5</span>
+              <span>144Hz FHD</span>
+            </div>
+            <p class="desc">Hiệu năng đồ họa đỉnh cao, tản nhiệt buồng hơi tân tiến, cân mượt mọi tựa game AAA.</p>
+            <div class="rating-row">
+              <div class="stars" aria-label="Đánh giá 4.9 trên 5 sao">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <span class="rating-score">4.9</span>
+              <span class="rating-reviews">(128)</span>
+            </div>
+            <div class="stock-status stock--in"><i class="fa-solid fa-circle-check"></i> Còn hàng tại 15 showroom</div>
+            <div class="price-row">
+              <span class="price">29.990.000đ</span>
+              <del class="old-price">37.490.000đ</del>
+            </div>
+          </div>
           <div class="card-actions">
-            <button type="button" class="btn-buy">Thêm vào giỏ</button>
-            <input type="checkbox" class="sr-radio" id="wish-1"><label class="btn-wish" for="wish-1" title="Yêu thích" aria-label="Yêu thích Laptop Gaming X15">❤️</label>
+            <button type="button" class="btn-buy"><i class="fa-solid fa-cart-plus"></i> Thêm Vào Giỏ</button>
+            <input type="checkbox" class="sr-radio" id="wish-1">
+            <label class="btn-wish" for="wish-1" title="Thêm vào danh sách yêu thích" aria-label="Yêu thích Laptop Gaming X15 ROG Edition">
+              <i class="fa-solid fa-heart"></i>
+            </label>
           </div>
         </article>
 
-        <article class="product-card" data-category="phone" data-tags="bestseller new" data-aos="fade-up" data-aos-delay="150">
-          <span class="badge badge--new">NEW</span>
-          <div class="product-img" aria-hidden="true">📱</div>
-          <p class="product-cat">Điện thoại</p>
-          <h3>Smartphone Nova Pro 5G</h3>
-          <p class="desc">Màn hình AMOLED 6.7", camera 108MP, pin 5000mAh.</p>
-          <p class="rating"><span class="stars" aria-hidden="true">⭐⭐⭐⭐⭐</span> 4.8/5 - 256 đánh giá</p>
-          <p class="stock stock--in">Còn hàng</p>
-          <p class="price-row"><span class="price">14.490.000đ</span></p>
+        <!-- Card 2: Smartphone Nova Pro 5G -->
+        <article class="product-card" data-category="phone" data-tags="bestseller new">
+          <div class="badge badge--new"><i class="fa-solid fa-sparkles"></i> MỚI 2026</div>
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=500&auto=format&fit=crop&q=80" alt="Smartphone Nova Pro 5G Flagship" loading="lazy">
+            <div class="img-overlay-action">
+              <span class="quick-view-btn"><i class="fa-regular fa-eye"></i> Xem Nhanh</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="product-cat"><i class="fa-solid fa-mobile-screen"></i> Điện Thoại 5G</span>
+            <h3>Smartphone Nova Pro 5G Flagship</h3>
+            <div class="product-specs">
+              <span>AMOLED 6.7" 120Hz</span>
+              <span>Camera 108MP OIS</span>
+              <span>Pin 5000mAh</span>
+              <span>Sạc 67W</span>
+            </div>
+            <p class="desc">Thiết kế viền siêu mỏng Titanium, camera chống rung quang học chụp đêm tuyệt hảo.</p>
+            <div class="rating-row">
+              <div class="stars" aria-label="Đánh giá 4.8 trên 5 sao">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <span class="rating-score">4.8</span>
+              <span class="rating-reviews">(256)</span>
+            </div>
+            <div class="stock-status stock--in"><i class="fa-solid fa-circle-check"></i> Sẵn hàng đủ màu</div>
+            <div class="price-row">
+              <span class="price">14.490.000đ</span>
+              <del class="old-price">16.990.000đ</del>
+            </div>
+          </div>
           <div class="card-actions">
-            <button type="button" class="btn-buy">Thêm vào giỏ</button>
-            <input type="checkbox" class="sr-radio" id="wish-2"><label class="btn-wish" for="wish-2" title="Yêu thích" aria-label="Yêu thích Smartphone Nova Pro 5G">❤️</label>
+            <button type="button" class="btn-buy"><i class="fa-solid fa-cart-plus"></i> Thêm Vào Giỏ</button>
+            <input type="checkbox" class="sr-radio" id="wish-2">
+            <label class="btn-wish" for="wish-2" title="Thêm vào danh sách yêu thích" aria-label="Yêu thích Smartphone Nova Pro 5G">
+              <i class="fa-solid fa-heart"></i>
+            </label>
           </div>
         </article>
 
-        <article class="product-card" data-category="audio" data-tags="new" data-aos="fade-up" data-aos-delay="200">
-          <span class="badge badge--new">NEW</span>
-          <div class="product-img" aria-hidden="true">🎧</div>
-          <p class="product-cat">Tai nghe & Loa</p>
-          <h3>Tai Nghe ANC AirBeat Pro</h3>
-          <p class="desc">Chống ồn chủ động ANC, Bluetooth 5.3, pin 30 giờ.</p>
-          <p class="rating"><span class="stars" aria-hidden="true">⭐⭐⭐⭐⭐</span> 4.7/5 - 94 đánh giá</p>
-          <p class="stock stock--in">Còn hàng</p>
-          <p class="price-row"><span class="price">2.190.000đ</span></p>
+        <!-- Card 3: Tai Nghe ANC AirBeat Pro -->
+        <article class="product-card" data-category="audio" data-tags="new">
+          <div class="badge badge--new"><i class="fa-solid fa-award"></i> TOP ÂM THANH</div>
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&auto=format&fit=crop&q=80" alt="Tai Nghe ANC AirBeat Pro Không Dây" loading="lazy">
+            <div class="img-overlay-action">
+              <span class="quick-view-btn"><i class="fa-regular fa-eye"></i> Xem Nhanh</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="product-cat"><i class="fa-solid fa-headphones"></i> Tai Nghe &amp; Loa</span>
+            <h3>Tai Nghe ANC AirBeat Pro Chống Ồn</h3>
+            <div class="product-specs">
+              <span>ANC Chống ồn chủ động</span>
+              <span>Bluetooth 5.3</span>
+              <span>Pin 35 Giờ</span>
+              <span>Hi-Res Audio</span>
+            </div>
+            <p class="desc">Khử tiếng ồn môi trường đến 98%, đệm tai da êm ái, âm bass uy lực chi tiết.</p>
+            <div class="rating-row">
+              <div class="stars" aria-label="Đánh giá 4.7 trên 5 sao">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <span class="rating-score">4.7</span>
+              <span class="rating-reviews">(94)</span>
+            </div>
+            <div class="stock-status stock--in"><i class="fa-solid fa-circle-check"></i> Còn hàng giao 2h</div>
+            <div class="price-row">
+              <span class="price">2.190.000đ</span>
+              <del class="old-price">2.690.000đ</del>
+            </div>
+          </div>
           <div class="card-actions">
-            <button type="button" class="btn-buy">Thêm vào giỏ</button>
-            <input type="checkbox" class="sr-radio" id="wish-3"><label class="btn-wish" for="wish-3" title="Yêu thích" aria-label="Yêu thích Tai Nghe ANC AirBeat Pro">❤️</label>
+            <button type="button" class="btn-buy"><i class="fa-solid fa-cart-plus"></i> Thêm Vào Giỏ</button>
+            <input type="checkbox" class="sr-radio" id="wish-3">
+            <label class="btn-wish" for="wish-3" title="Thêm vào danh sách yêu thích" aria-label="Yêu thích Tai Nghe ANC AirBeat Pro">
+              <i class="fa-solid fa-heart"></i>
+            </label>
           </div>
         </article>
 
-        <article class="product-card" data-category="gaming" data-tags="bestseller" data-aos="fade-up" data-aos-delay="250">
-          <span class="badge badge--hot">HOT</span>
-          <div class="product-img" aria-hidden="true">⌨️</div>
-          <p class="product-cat">Phụ kiện gaming</p>
-          <h3>Bàn Phím Cơ Keyforge K87</h3>
-          <p class="desc">Switch red, LED RGB 16,8 triệu màu, kết nối 3 chế độ.</p>
-          <p class="rating"><span class="stars" aria-hidden="true">⭐⭐⭐⭐⭐</span> 4.9/5 - 312 đánh giá</p>
-          <p class="stock stock--low">Sắp hết hàng</p>
-          <p class="price-row"><span class="price">1.590.000đ</span></p>
+        <!-- Card 4: Bàn Phím Cơ Keyforge K87 -->
+        <article class="product-card" data-category="gaming" data-tags="bestseller">
+          <div class="badge badge--hot"><i class="fa-solid fa-fire"></i> BÁN CHẠY #1</div>
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=500&auto=format&fit=crop&q=80" alt="Bàn Phím Cơ Keyforge K87 RGB" loading="lazy">
+            <div class="img-overlay-action">
+              <span class="quick-view-btn"><i class="fa-regular fa-eye"></i> Xem Nhanh</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="product-cat"><i class="fa-solid fa-gamepad"></i> Phụ Kiện Gaming</span>
+            <h3>Bàn Phím Cơ Keyforge K87 RGB</h3>
+            <div class="product-specs">
+              <span>Switch Custom Pre-lubed</span>
+              <span>LED RGB 16.8M</span>
+              <span>3 Modes (Type-C/2.4G/BT)</span>
+              <span>Hotswap 5-pin</span>
+            </div>
+            <p class="desc">Gõ phím êm ái đầm tay, keycap PBT Doubleshot bền bỉ không bị bóng mờ theo thời gian.</p>
+            <div class="rating-row">
+              <div class="stars" aria-label="Đánh giá 4.9 trên 5 sao">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <span class="rating-score">4.9</span>
+              <span class="rating-reviews">(312)</span>
+            </div>
+            <div class="stock-status stock--low"><i class="fa-solid fa-triangle-exclamation"></i> Chỉ còn 5 cái cuối</div>
+            <div class="price-row">
+              <span class="price">1.590.000đ</span>
+              <del class="old-price">1.990.000đ</del>
+            </div>
+          </div>
           <div class="card-actions">
-            <button type="button" class="btn-buy">Thêm vào giỏ</button>
-            <input type="checkbox" class="sr-radio" id="wish-4"><label class="btn-wish" for="wish-4" title="Yêu thích" aria-label="Yêu thích Bàn Phím Cơ Keyforge K87">❤️</label>
+            <button type="button" class="btn-buy"><i class="fa-solid fa-cart-plus"></i> Thêm Vào Giỏ</button>
+            <input type="checkbox" class="sr-radio" id="wish-4">
+            <label class="btn-wish" for="wish-4" title="Thêm vào danh sách yêu thích" aria-label="Yêu thích Bàn Phím Cơ Keyforge K87">
+              <i class="fa-solid fa-heart"></i>
+            </label>
           </div>
         </article>
 
-        <article class="product-card" data-category="gaming" data-tags="sale" data-aos="fade-up" data-aos-delay="100">
-          <span class="badge badge--sale">-22%</span>
-          <div class="product-img" aria-hidden="true">🖱️</div>
-          <p class="product-cat">Phụ kiện gaming</p>
-          <h3>Chuột Không Dây Glide X</h3>
-          <p class="desc">Cảm biến 26.000 DPI, nhẹ 62g, pin dùng 70 giờ.</p>
-          <p class="rating"><span class="stars" aria-hidden="true">⭐⭐⭐⭐⭐</span> 4.6/5 - 187 đánh giá</p>
-          <p class="stock stock--in">Còn hàng</p>
-          <p class="price-row"><span class="price">690.000đ</span><del class="old-price">890.000đ</del></p>
+        <!-- Card 5: Chuột Không Dây Glide X -->
+        <article class="product-card" data-category="gaming" data-tags="sale">
+          <div class="badge badge--sale"><i class="fa-solid fa-tag"></i> GIẢM 22%</div>
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=500&auto=format&fit=crop&q=80" alt="Chuột Siêu Nhẹ Glide X Pro" loading="lazy">
+            <div class="img-overlay-action">
+              <span class="quick-view-btn"><i class="fa-regular fa-eye"></i> Xem Nhanh</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="product-cat"><i class="fa-solid fa-gamepad"></i> Phụ Kiện Gaming</span>
+            <h3>Chuột Không Dây Siêu Nhẹ Glide X Pro</h3>
+            <div class="product-specs">
+              <span>Trọng lượng 62g</span>
+              <span>Cảm biến 26.000 DPI</span>
+              <span>Polling Rate 4K</span>
+              <span>Pin 70h</span>
+            </div>
+            <p class="desc">Cảm giác cầm công thái học, switch quang học 80 triệu lần bấm không bao giờ double-click.</p>
+            <div class="rating-row">
+              <div class="stars" aria-label="Đánh giá 4.6 trên 5 sao">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <span class="rating-score">4.6</span>
+              <span class="rating-reviews">(187)</span>
+            </div>
+            <div class="stock-status stock--in"><i class="fa-solid fa-circle-check"></i> Còn hàng đầy đủ</div>
+            <div class="price-row">
+              <span class="price">690.000đ</span>
+              <del class="old-price">890.000đ</del>
+            </div>
+          </div>
           <div class="card-actions">
-            <button type="button" class="btn-buy">Thêm vào giỏ</button>
-            <input type="checkbox" class="sr-radio" id="wish-5"><label class="btn-wish" for="wish-5" title="Yêu thích" aria-label="Yêu thích Chuột Không Dây Glide X">❤️</label>
+            <button type="button" class="btn-buy"><i class="fa-solid fa-cart-plus"></i> Thêm Vào Giỏ</button>
+            <input type="checkbox" class="sr-radio" id="wish-5">
+            <label class="btn-wish" for="wish-5" title="Thêm vào danh sách yêu thích" aria-label="Yêu thích Chuột Không Dây Glide X">
+              <i class="fa-solid fa-heart"></i>
+            </label>
           </div>
         </article>
 
-        <article class="product-card" data-category="watch" data-tags="new" data-aos="fade-up" data-aos-delay="150">
-          <span class="badge badge--new">NEW</span>
-          <div class="product-img" aria-hidden="true">⌚</div>
-          <p class="product-cat">Đồng hồ thông minh</p>
-          <h3>Smartwatch FitPulse S2</h3>
-          <p class="desc">Theo dõi sức khỏe 24/7, chống nước 5ATM, GPS tích hợp.</p>
-          <p class="rating"><span class="stars" aria-hidden="true">⭐⭐⭐⭐⭐</span> 4.5/5 - 76 đánh giá</p>
-          <p class="stock stock--in">Còn hàng</p>
-          <p class="price-row"><span class="price">3.890.000đ</span></p>
+        <!-- Card 6: Smartwatch FitPulse S2 -->
+        <article class="product-card" data-category="watch" data-tags="new">
+          <div class="badge badge--new"><i class="fa-solid fa-bolt"></i> THẾ HỆ MỚI</div>
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=80" alt="Đồng Hồ FitPulse S2 Sport" loading="lazy">
+            <div class="img-overlay-action">
+              <span class="quick-view-btn"><i class="fa-regular fa-eye"></i> Xem Nhanh</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="product-cat"><i class="fa-solid fa-clock"></i> Đồng Hồ Thông Minh</span>
+            <h3>Đồng Hồ FitPulse S2 Titanium Sport</h3>
+            <div class="product-specs">
+              <span>Đo SpO2 &amp; ECG 24/7</span>
+              <span>Chống nước 5ATM</span>
+              <span>GPS Kép Chuẩn Xác</span>
+              <span>Pin 10 Ngày</span>
+            </div>
+            <p class="desc">Trợ lý sức khỏe toàn diện trên cổ tay, nhận cuộc gọi Bluetooth và hơn 100 chế độ thể thao.</p>
+            <div class="rating-row">
+              <div class="stars" aria-label="Đánh giá 4.5 trên 5 sao">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <span class="rating-score">4.5</span>
+              <span class="rating-reviews">(76)</span>
+            </div>
+            <div class="stock-status stock--in"><i class="fa-solid fa-circle-check"></i> Còn hàng đủ màu</div>
+            <div class="price-row">
+              <span class="price">3.890.000đ</span>
+              <del class="old-price">4.490.000đ</del>
+            </div>
+          </div>
           <div class="card-actions">
-            <button type="button" class="btn-buy">Thêm vào giỏ</button>
-            <input type="checkbox" class="sr-radio" id="wish-6"><label class="btn-wish" for="wish-6" title="Yêu thích" aria-label="Yêu thích Smartwatch FitPulse S2">❤️</label>
+            <button type="button" class="btn-buy"><i class="fa-solid fa-cart-plus"></i> Thêm Vào Giỏ</button>
+            <input type="checkbox" class="sr-radio" id="wish-6">
+            <label class="btn-wish" for="wish-6" title="Thêm vào danh sách yêu thích" aria-label="Yêu thích Smartwatch FitPulse S2">
+              <i class="fa-solid fa-heart"></i>
+            </label>
           </div>
         </article>
 
-        <article class="product-card" data-category="gaming" data-tags="sale" data-aos="fade-up" data-aos-delay="200">
-          <span class="badge badge--sale">-15%</span>
-          <div class="product-img" aria-hidden="true">🖥️</div>
-          <p class="product-cat">Phụ kiện gaming</p>
-          <h3>Màn Hình 4K UltraView 27"</h3>
-          <p class="desc">Tấm nền IPS 4K, 144Hz, HDR400, phủ 99% sRGB.</p>
-          <p class="rating"><span class="stars" aria-hidden="true">⭐⭐⭐⭐⭐</span> 4.8/5 - 63 đánh giá</p>
-          <p class="stock stock--low">Sắp hết hàng</p>
-          <p class="price-row"><span class="price">8.490.000đ</span><del class="old-price">9.990.000đ</del></p>
+        <!-- Card 7: Màn Hình 4K UltraView 27" -->
+        <article class="product-card" data-category="gaming" data-tags="sale">
+          <div class="badge badge--sale"><i class="fa-solid fa-tag"></i> GIẢM 15%</div>
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=500&auto=format&fit=crop&q=80" alt="Màn Hình 4K UltraView 27 Inch Gaming" loading="lazy">
+            <div class="img-overlay-action">
+              <span class="quick-view-btn"><i class="fa-regular fa-eye"></i> Xem Nhanh</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="product-cat"><i class="fa-solid fa-desktop"></i> Màn Hình Đồ Họa</span>
+            <h3>Màn Hình 4K UltraView 27" 144Hz IPS</h3>
+            <div class="product-specs">
+              <span>Độ phân giải 4K UHD</span>
+              <span>144Hz 1ms G-Sync</span>
+              <span>99% sRGB HDR400</span>
+              <span>Type-C 65W PD</span>
+            </div>
+            <p class="desc">Chuẩn màu đồ họa chuyên nghiệp kết hợp tần số quét 144Hz chơi game siêu mượt.</p>
+            <div class="rating-row">
+              <div class="stars" aria-label="Đánh giá 4.8 trên 5 sao">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <span class="rating-score">4.8</span>
+              <span class="rating-reviews">(63)</span>
+            </div>
+            <div class="stock-status stock--low"><i class="fa-solid fa-triangle-exclamation"></i> Sắp hết hàng</div>
+            <div class="price-row">
+              <span class="price">8.490.000đ</span>
+              <del class="old-price">9.990.000đ</del>
+            </div>
+          </div>
           <div class="card-actions">
-            <button type="button" class="btn-buy">Thêm vào giỏ</button>
-            <input type="checkbox" class="sr-radio" id="wish-7"><label class="btn-wish" for="wish-7" title="Yêu thích" aria-label="Yêu thích Màn Hình 4K UltraView 27&quot;">❤️</label>
+            <button type="button" class="btn-buy"><i class="fa-solid fa-cart-plus"></i> Thêm Vào Giỏ</button>
+            <input type="checkbox" class="sr-radio" id="wish-7">
+            <label class="btn-wish" for="wish-7" title="Thêm vào danh sách yêu thích" aria-label="Yêu thích Màn Hình 4K UltraView 27">
+              <i class="fa-solid fa-heart"></i>
+            </label>
           </div>
         </article>
 
-        <article class="product-card" data-category="audio" data-tags="bestseller sale" data-aos="fade-up" data-aos-delay="250">
-          <span class="badge badge--sale">-28%</span>
-          <div class="product-img" aria-hidden="true">🔊</div>
-          <p class="product-cat">Tai nghe & Loa</p>
-          <h3>Loa Bluetooth BoomBox</h3>
-          <p class="desc">Âm thanh 360°, chống nước IP67, pin 20 giờ.</p>
-          <p class="rating"><span class="stars" aria-hidden="true">⭐⭐⭐⭐⭐</span> 4.7/5 - 421 đánh giá</p>
-          <p class="stock stock--in">Còn hàng</p>
-          <p class="price-row"><span class="price">1.290.000đ</span><del class="old-price">1.790.000đ</del></p>
+        <!-- Card 8: Loa Bluetooth BoomBox -->
+        <article class="product-card" data-category="audio" data-tags="bestseller sale">
+          <div class="badge badge--sale"><i class="fa-solid fa-fire"></i> GIẢM 28%</div>
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1545454675-3531b543be5d?w=500&auto=format&fit=crop&q=80" alt="Loa Bluetooth BoomBox Siêu Trầm" loading="lazy">
+            <div class="img-overlay-action">
+              <span class="quick-view-btn"><i class="fa-regular fa-eye"></i> Xem Nhanh</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="product-cat"><i class="fa-solid fa-volume-high"></i> Âm Thanh Di Động</span>
+            <h3>Loa Bluetooth BoomBox SuperBass 360°</h3>
+            <div class="product-specs">
+              <span>Công suất 60W</span>
+              <span>Âm thanh 360 độ</span>
+              <span>Chống nước IP67</span>
+              <span>Pin khủng 24h</span>
+            </div>
+            <p class="desc">Chống nước bụi tuyệt đối, tích hợp công nghệ BassBoost rung chuyển mọi bữa tiệc ngoài trời.</p>
+            <div class="rating-row">
+              <div class="stars" aria-label="Đánh giá 4.7 trên 5 sao">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </div>
+              <span class="rating-score">4.7</span>
+              <span class="rating-reviews">(421)</span>
+            </div>
+            <div class="stock-status stock--in"><i class="fa-solid fa-circle-check"></i> Còn hàng số lượng lớn</div>
+            <div class="price-row">
+              <span class="price">1.290.000đ</span>
+              <del class="old-price">1.790.000đ</del>
+            </div>
+          </div>
           <div class="card-actions">
-            <button type="button" class="btn-buy">Thêm vào giỏ</button>
-            <input type="checkbox" class="sr-radio" id="wish-8"><label class="btn-wish" for="wish-8" title="Yêu thích" aria-label="Yêu thích Loa Bluetooth BoomBox">❤️</label>
+            <button type="button" class="btn-buy"><i class="fa-solid fa-cart-plus"></i> Thêm Vào Giỏ</button>
+            <input type="checkbox" class="sr-radio" id="wish-8">
+            <label class="btn-wish" for="wish-8" title="Thêm vào danh sách yêu thích" aria-label="Yêu thích Loa Bluetooth BoomBox">
+              <i class="fa-solid fa-heart"></i>
+            </label>
           </div>
         </article>
 
-      
-        <article class="product-card" data-category="phone" data-tags="sale" data-aos="fade-up">
-          <span class="badge badge--sale">-18%</span>
-          <div class="product-img" aria-hidden="true">📱</div>
-          <p class="product-cat">Điện thoại</p>
-          <h3>Smartphone Galaxy Ultra 5G</h3>
-          <p class="desc">Camera zoom 100x, bút S-Pen, pin 5000mAh, sạc nhanh 45W.</p>
-          <p class="rating"><span class="stars" aria-hidden="true">⭐⭐⭐⭐⭐</span> 4.9/5 - 198 đánh giá</p>
-          <p class="stock stock--in">Còn hàng</p>
-          <p class="price-row"><span class="price">22.490.000đ</span><del class="old-price">26.990.000đ</del></p>
+        <!-- Card 9: Smartphone Galaxy Ultra 5G -->
+        <article class="product-card" data-category="phone" data-tags="sale bestseller">
+          <div class="badge badge--hot"><i class="fa-solid fa-bolt"></i> FLAGSHIP GIẢM 18%</div>
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1580910051074-3eb694886505?w=500&auto=format&fit=crop&q=80" alt="Smartphone Galaxy Ultra 5G AI Camera" loading="lazy">
+            <div class="img-overlay-action">
+              <span class="quick-view-btn"><i class="fa-regular fa-eye"></i> Xem Nhanh</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="product-cat"><i class="fa-solid fa-mobile-screen"></i> Flagship AI</span>
+            <h3>Smartphone Galaxy Ultra 5G AI Tech</h3>
+            <div class="product-specs">
+              <span>Zoom 100X AI</span>
+              <span>Bút S-Pen tích hợp</span>
+              <span>Snapdragon 8 Gen 3</span>
+              <span>Sạc 45W 5000mAh</span>
+            </div>
+            <p class="desc">Trải nghiệm trí tuệ nhân tạo Galaxy AI phiên dịch trực tiếp, chỉnh sửa ảnh thần kỳ.</p>
+            <div class="rating-row">
+              <div class="stars" aria-label="Đánh giá 4.9 trên 5 sao">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <span class="rating-score">4.9</span>
+              <span class="rating-reviews">(198)</span>
+            </div>
+            <div class="stock-status stock--in"><i class="fa-solid fa-circle-check"></i> Còn hàng đủ 4 màu</div>
+            <div class="price-row">
+              <span class="price">22.490.000đ</span>
+              <del class="old-price">26.990.000đ</del>
+            </div>
+          </div>
           <div class="card-actions">
-            <button type="button" class="btn-buy">Thêm vào giỏ</button>
-            <input type="checkbox" class="sr-radio" id="wish-9"><label class="btn-wish" for="wish-9" title="Yêu thích" aria-label="Yêu thích Smartphone Galaxy Ultra 5G">❤️</label>
+            <button type="button" class="btn-buy"><i class="fa-solid fa-cart-plus"></i> Thêm Vào Giỏ</button>
+            <input type="checkbox" class="sr-radio" id="wish-9">
+            <label class="btn-wish" for="wish-9" title="Thêm vào danh sách yêu thích" aria-label="Yêu thích Smartphone Galaxy Ultra 5G">
+              <i class="fa-solid fa-heart"></i>
+            </label>
           </div>
         </article>
 
-        <article class="product-card" data-category="laptop" data-tags="new" data-aos="fade-up">
-          <span class="badge badge--new">NEW</span>
-          <div class="product-img" aria-hidden="true">💻</div>
-          <p class="product-cat">Laptop</p>
-          <h3>Ultrabook SlimBook 14 Pro</h3>
-          <p class="desc">Chip Intel Core Ultra, vỏ nhôm nguyên khối, nhẹ 1.2kg, pin 14h.</p>
-          <p class="rating"><span class="stars" aria-hidden="true">⭐⭐⭐⭐⭐</span> 4.8/5 - 85 đánh giá</p>
-          <p class="stock stock--in">Còn hàng</p>
-          <p class="price-row"><span class="price">21.990.000đ</span></p>
+        <!-- Card 10: Ultrabook SlimBook 14 Pro -->
+        <article class="product-card" data-category="laptop" data-tags="new">
+          <div class="badge badge--new"><i class="fa-solid fa-wand-magic-sparkles"></i> AI PC 2026</div>
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500&auto=format&fit=crop&q=80" alt="Ultrabook SlimBook 14 Pro Mỏng Nhẹ" loading="lazy">
+            <div class="img-overlay-action">
+              <span class="quick-view-btn"><i class="fa-regular fa-eye"></i> Xem Nhanh</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="product-cat"><i class="fa-solid fa-laptop"></i> Doanh Nhân &amp; Học Tập</span>
+            <h3>Ultrabook SlimBook 14 Pro Intel Ultra</h3>
+            <div class="product-specs">
+              <span>Intel Core Ultra 7</span>
+              <span>Trọng lượng 1.18kg</span>
+              <span>Màn 2.8K OLED 120Hz</span>
+              <span>Pin 16 tiếng</span>
+            </div>
+            <p class="desc">Vỏ nhôm hàng không nguyên khối, tích hợp NPU xử lý tác vụ trí tuệ nhân tạo mượt mà.</p>
+            <div class="rating-row">
+              <div class="stars" aria-label="Đánh giá 4.8 trên 5 sao">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <span class="rating-score">4.8</span>
+              <span class="rating-reviews">(85)</span>
+            </div>
+            <div class="stock-status stock--in"><i class="fa-solid fa-circle-check"></i> Còn hàng mới 100%</div>
+            <div class="price-row">
+              <span class="price">21.990.000đ</span>
+              <del class="old-price">24.500.000đ</del>
+            </div>
+          </div>
           <div class="card-actions">
-            <button type="button" class="btn-buy">Thêm vào giỏ</button>
-            <input type="checkbox" class="sr-radio" id="wish-10"><label class="btn-wish" for="wish-10" title="Yêu thích" aria-label="Yêu thích Ultrabook SlimBook 14 Pro">❤️</label>
+            <button type="button" class="btn-buy"><i class="fa-solid fa-cart-plus"></i> Thêm Vào Giỏ</button>
+            <input type="checkbox" class="sr-radio" id="wish-10">
+            <label class="btn-wish" for="wish-10" title="Thêm vào danh sách yêu thích" aria-label="Yêu thích Ultrabook SlimBook 14 Pro">
+              <i class="fa-solid fa-heart"></i>
+            </label>
           </div>
         </article>
 
-        <article class="product-card" data-category="watch" data-tags="bestseller sale" data-aos="fade-up">
-          <span class="badge badge--sale">-25%</span>
-          <div class="product-img" aria-hidden="true">⌚</div>
-          <p class="product-cat">Đồng hồ thông minh</p>
-          <h3>Smartwatch Apex Pro GPS</h3>
-          <p class="desc">Màn hình Sapphire, đo điện tâm đồ ECG, chịu nước 100m, pin 14 ngày.</p>
-          <p class="rating"><span class="stars" aria-hidden="true">⭐⭐⭐⭐⭐</span> 4.9/5 - 142 đánh giá</p>
-          <p class="stock stock--in">Còn hàng</p>
-          <p class="price-row"><span class="price">5.990.000đ</span><del class="old-price">7.990.000đ</del></p>
+        <!-- Card 11: Smartwatch Apex Pro GPS -->
+        <article class="product-card" data-category="watch" data-tags="bestseller sale">
+          <div class="badge badge--sale"><i class="fa-solid fa-tag"></i> GIẢM 25%</div>
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=500&auto=format&fit=crop&q=80" alt="Đồng Hồ Thể Thao Apex Pro GPS" loading="lazy">
+            <div class="img-overlay-action">
+              <span class="quick-view-btn"><i class="fa-regular fa-eye"></i> Xem Nhanh</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="product-cat"><i class="fa-solid fa-stopwatch"></i> Đồng Hồ Thể Thao</span>
+            <h3>Smartwatch Apex Pro GPS Sapphire</h3>
+            <div class="product-specs">
+              <span>Mặt kính Sapphire</span>
+              <span>Lặn biển 100m</span>
+              <span>Bản đồ Offline TOPO</span>
+              <span>Pin 18 Ngày</span>
+            </div>
+            <p class="desc">Độ bền chuẩn quân đội Mỹ MIL-STD-810H, chuyên dụng cho marathon và phượt mạo hiểm.</p>
+            <div class="rating-row">
+              <div class="stars" aria-label="Đánh giá 4.9 trên 5 sao">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <span class="rating-score">4.9</span>
+              <span class="rating-reviews">(142)</span>
+            </div>
+            <div class="stock-status stock--in"><i class="fa-solid fa-circle-check"></i> Còn hàng chính hãng</div>
+            <div class="price-row">
+              <span class="price">5.990.000đ</span>
+              <del class="old-price">7.990.000đ</del>
+            </div>
+          </div>
           <div class="card-actions">
-            <button type="button" class="btn-buy">Thêm vào giỏ</button>
-            <input type="checkbox" class="sr-radio" id="wish-11"><label class="btn-wish" for="wish-11" title="Yêu thích" aria-label="Yêu thích Smartwatch Apex Pro GPS">❤️</label>
+            <button type="button" class="btn-buy"><i class="fa-solid fa-cart-plus"></i> Thêm Vào Giỏ</button>
+            <input type="checkbox" class="sr-radio" id="wish-11">
+            <label class="btn-wish" for="wish-11" title="Thêm vào danh sách yêu thích" aria-label="Yêu thích Smartwatch Apex Pro GPS">
+              <i class="fa-solid fa-heart"></i>
+            </label>
           </div>
         </article>
 
-        <article class="product-card" data-category="gaming" data-tags="new" data-aos="fade-up">
-          <span class="badge badge--new">NEW</span>
-          <div class="product-img" aria-hidden="true">🎮</div>
-          <p class="product-cat">Phụ kiện gaming</p>
-          <h3>Tay Cầm Chơi Game DualMaster X</h3>
-          <p class="desc">Cần xoay Hall Effect chống trôi, rung phản hồi haptic, kết nối đa nền tảng.</p>
-          <p class="rating"><span class="stars" aria-hidden="true">⭐⭐⭐⭐⭐</span> 4.8/5 - 110 đánh giá</p>
-          <p class="stock stock--in">Còn hàng</p>
-          <p class="price-row"><span class="price">1.190.000đ</span></p>
+        <!-- Card 12: Tay Cầm Chơi Game DualMaster X -->
+        <article class="product-card" data-category="gaming" data-tags="new">
+          <div class="badge badge--new"><i class="fa-solid fa-star"></i> ESPORTS EDITION</div>
+          <div class="product-img">
+            <img src="https://images.unsplash.com/photo-1600080972464-8e5f35f63d08?w=500&auto=format&fit=crop&q=80" alt="Tay Cầm Chơi Game DualMaster X Không Dây" loading="lazy">
+            <div class="img-overlay-action">
+              <span class="quick-view-btn"><i class="fa-regular fa-eye"></i> Xem Nhanh</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <span class="product-cat"><i class="fa-solid fa-gamepad"></i> Tay Cầm Chơi Game</span>
+            <h3>Tay Cầm Chơi Game DualMaster X Pro</h3>
+            <div class="product-specs">
+              <span>Hall Effect không trôi cần</span>
+              <span>Trigger từ tính</span>
+              <span>Rung Haptic đa tầng</span>
+              <span>PC / Switch / iOS / Android</span>
+            </div>
+            <p class="desc">Cần xoay Hall Effect chống trôi tuyệt đối, phản hồi rung lực chân thực đến từng cú chạm.</p>
+            <div class="rating-row">
+              <div class="stars" aria-label="Đánh giá 4.8 trên 5 sao">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <span class="rating-score">4.8</span>
+              <span class="rating-reviews">(110)</span>
+            </div>
+            <div class="stock-status stock--in"><i class="fa-solid fa-circle-check"></i> Sẵn hàng trải nghiệm</div>
+            <div class="price-row">
+              <span class="price">1.190.000đ</span>
+              <del class="old-price">1.490.000đ</del>
+            </div>
+          </div>
           <div class="card-actions">
-            <button type="button" class="btn-buy">Thêm vào giỏ</button>
-            <input type="checkbox" class="sr-radio" id="wish-12"><label class="btn-wish" for="wish-12" title="Yêu thích" aria-label="Yêu thích Tay Cầm Chơi Game DualMaster X">❤️</label>
+            <button type="button" class="btn-buy"><i class="fa-solid fa-cart-plus"></i> Thêm Vào Giỏ</button>
+            <input type="checkbox" class="sr-radio" id="wish-12">
+            <label class="btn-wish" for="wish-12" title="Thêm vào danh sách yêu thích" aria-label="Yêu thích Tay Cầm Chơi Game DualMaster X">
+              <i class="fa-solid fa-heart"></i>
+            </label>
           </div>
         </article>
+
       </div>
 
-      <p class="no-result" id="no-result">Chưa có sản phẩm phù hợp. Hãy thử chọn danh mục hoặc bộ lọc khác.</p>
+      <!-- Thông báo khi lọc không có kết quả -->
+      <div class="no-result" id="no-result">
+        <div class="no-result-icon"><i class="fa-solid fa-box-open"></i></div>
+        <h3>Không tìm thấy sản phẩm phù hợp</h3>
+        <p>Hiện chưa có sản phẩm nào thuộc tiêu chí lọc này. Hãy thử bấm chọn <strong>Tất Cả</strong> hoặc danh mục khác nhé!</p>
+        <a href="#c-all" class="btn-cta btn-cta--primary"><i class="fa-solid fa-arrows-rotate"></i> Xem Tất Cả Sản Phẩm</a>
+      </div>
     </section>
 
     <!-- ===================== SECTION 3: BANNER THU CŨ ĐỔI MỚI ===================== -->
-    <section id="thu-cu" class="promo-banner" data-aos="zoom-in">
-      <div class="promo-text">
-        <h2>Đổi Cũ Lấy Mới - Thu Cũ Giá Cao</h2>
-        <p>Mang thiết bị cũ đến TechWorld, nhận báo giá trong 5 phút và trừ thẳng vào đơn hàng mới. Hỗ trợ laptop, điện thoại, đồng hồ thông minh và tai nghe.</p>
-        <ul class="promo-points">
-          <li>✅ Thu đến 90% giá trị máy</li>
-          <li>✅ Định giá minh bạch, không phát sinh phí</li>
-          <li>✅ Trợ giá thêm đến 2.000.000đ khi lên đời máy mới</li>
-        </ul>
-        <a href="#footer" class="btn-cta btn-cta--light">Định Giá Máy Cũ</a>
+    <section id="thu-cu" class="promo-banner-section">
+      <div class="promo-banner">
+        <div class="promo-text">
+          <div class="promo-pill"><i class="fa-solid fa-recycle"></i> CHƯƠNG TRÌNH ĐỘC QUYỀN 2026</div>
+          <h2>Thu Cũ Đổi Mới - Lên Đời Siêu Phẩm</h2>
+          <p>Mang ngay điện thoại, laptop hay phụ kiện cũ của bạn tới TechWorld. Nhận định giá máy trong 5 phút và nhận voucher giảm giá trực tiếp vào đơn hàng mới.</p>
+          
+          <div class="promo-features">
+            <div class="promo-feature-card">
+              <div class="pfc-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+              <div class="pfc-content">
+                <strong>Thu Lại Đến 90%</strong>
+                <span>Giá trị máy tốt nhất thị trường</span>
+              </div>
+            </div>
+            <div class="promo-feature-card">
+              <div class="pfc-icon"><i class="fa-solid fa-gift"></i></div>
+              <div class="pfc-content">
+                <strong>Trợ Giá 2.000.000đ</strong>
+                <span>Tặng thêm trực tiếp khi lên đời</span>
+              </div>
+            </div>
+            <div class="promo-feature-card">
+              <div class="pfc-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+              <div class="pfc-content">
+                <strong>Định Giá Trong 5 Phút</strong>
+                <span>Thủ tục minh bạch, bảo mật dữ liệu</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="promo-cta-group">
+            <a href="#footer" class="btn-cta btn-cta--light">
+              <i class="fa-solid fa-calculator"></i> Định Giá Máy Cũ Miễn Phí
+            </a>
+            <a href="#san-pham" class="btn-cta btn-cta--glass">
+              Xem Sản Phẩm Áp Dụng <i class="fa-solid fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="promo-visual">
+          <div class="tradein-graphic">
+            <div class="graphic-circle outer-pulse"></div>
+            <div class="graphic-circle inner-glow"></div>
+            <div class="tradein-card-mockup">
+              <i class="fa-solid fa-arrows-rotate tradein-spin-icon"></i>
+              <span class="mock-val">TIẾT KIỆM TỚI 90%</span>
+              <p>Lên đời công nghệ thông minh &amp; tiết kiệm nhất</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="promo-visual" aria-hidden="true">♻️</div>
     </section>
 
     <!-- ===================== SECTION 4: CAM KẾT DỊCH VỤ ===================== -->
-    <section id="cam-ket" class="services" data-aos="fade-up">
-      <h2 class="section-title" data-aos="fade-right">Cam Kết Dịch Vụ</h2>
+    <section id="cam-ket" class="services">
+      <div class="section-heading">
+        <span class="section-subtitle"><i class="fa-solid fa-shield-check"></i> AN TÂM TUYỆT ĐỐI</span>
+        <h2 class="section-title">Tại Sao Nên Chọn TechWorld?</h2>
+        <p class="section-desc">Chúng tôi không chỉ bán sản phẩm công nghệ mà mang đến cho bạn sự an tâm trọn vẹn với dịch vụ hậu mãi số 1 Việt Nam.</p>
+      </div>
+
       <div class="service-grid">
 
-        <article class="service-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="service-icon">🚚</div>
-          <h3>Giao Hàng Nhanh</h3>
-          <p>Giao hàng toàn quốc trong 2 giờ nội thành, miễn phí cho đơn từ 500.000đ.</p>
+        <article class="service-card">
+          <div class="service-icon-wrapper icon-ship">
+            <i class="fa-solid fa-truck-bolt"></i>
+          </div>
+          <h3>Giao Hàng Siêu Tốc 2H</h3>
+          <p>Nhận hàng tận tay trong vòng 2 giờ tại nội thành Hà Nội &amp; TP.HCM. Miễn phí vận chuyển toàn quốc cho đơn từ 500.000đ.</p>
+          <span class="service-link"><i class="fa-solid fa-check"></i> Kiểm tra hàng trước thanh toán</span>
         </article>
 
-        <article class="service-card" data-aos="fade-up" data-aos-delay="200">
-          <div class="service-icon">🛡️</div>
-          <h3>Bảo Hành Chính Hãng</h3>
-          <p>Sản phẩm 100% chính hãng, bảo hành đầy đủ tại các trung tâm ủy quyền.</p>
+        <article class="service-card">
+          <div class="service-icon-wrapper icon-warranty">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <h3>100% Chính Hãng Ủy Quyền</h3>
+          <p>Cam kết bồi thường 200% nếu phát hiện hàng giả, hàng nhái. Đầy đủ hóa đơn VAT điện tử và bảo hành chính hãng toàn quốc.</p>
+          <span class="service-link"><i class="fa-solid fa-check"></i> Bảo hành tại trung tâm ủy quyền</span>
         </article>
 
-        <article class="service-card" data-aos="fade-up" data-aos-delay="300">
-          <div class="service-icon">🔄</div>
-          <h3>Đổi Trả 30 Ngày</h3>
-          <p>Đổi trả dễ dàng trong 30 ngày nếu sản phẩm có lỗi từ nhà sản xuất.</p>
+        <article class="service-card">
+          <div class="service-icon-wrapper icon-return">
+            <i class="fa-solid fa-rotate-left"></i>
+          </div>
+          <h3>1 Đổi 1 Trong 30 Ngày</h3>
+          <p>Chính sách bảo hành vàng vượt trội: lỗi do nhà sản xuất là đổi ngay máy mới 100% trong 30 ngày đầu, không chờ đợi sửa chữa.</p>
+          <span class="service-link"><i class="fa-solid fa-check"></i> Thủ tục đổi trả siêu nhanh</span>
         </article>
 
+        <article class="service-card">
+          <div class="service-icon-wrapper icon-support">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <h3>Hỗ Trợ Kỹ Thuật Trọn Đời</h3>
+          <p>Đội ngũ chuyên viên công nghệ sẵn sàng tư vấn cấu hình, cài đặt phần mềm bản quyền và vệ sinh máy miễn phí trọn đời sản phẩm.</p>
+          <span class="service-link"><i class="fa-solid fa-check"></i> Hotline kỹ thuật trực 24/7</span>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 5: ĐĂNG KÝ NHẬN TIN ƯU ĐÃI ===================== -->
+    <section class="newsletter-section" aria-label="Đăng ký nhận ưu đãi">
+      <div class="newsletter-card">
+        <div class="newsletter-content">
+          <span class="newsletter-badge"><i class="fa-solid fa-envelope-open-text"></i> TECH COMMUNITY</span>
+          <h2>Đăng Ký Thành Viên TechWorld</h2>
+          <p>Nhận ngay voucher giảm giá <strong>200.000đ</strong> cho đơn hàng đầu tiên cùng đặc quyền săn deal bí mật trước giờ mở bán.</p>
+        </div>
+        <form class="newsletter-form" action="#" method="post" onsubmit="return false;">
+          <div class="newsletter-input-group">
+            <i class="fa-regular fa-envelope"></i>
+            <input type="email" placeholder="Nhập địa chỉ email của bạn..." required aria-label="Email nhận khuyến mãi">
+            <button type="submit" class="btn-newsletter">Nhận Mã 200K <i class="fa-solid fa-paper-plane"></i></button>
+          </div>
+          <span class="newsletter-privacy"><i class="fa-solid fa-lock"></i> Chúng tôi tôn trọng quyền riêng tư. Không bao giờ gửi thư rác!</span>
+        </form>
       </div>
     </section>
   </main>
 
   <!-- ===================== FOOTER ===================== -->
   <footer id="footer" class="site-footer">
-    <p class="footer-brand">© 2026 TechWorld - Cửa Hàng Đồ Điện Tử & Công Nghệ</p>
-    <p>Hotline: 1900 6868 - Hỗ trợ 8:00 - 22:00 mỗi ngày</p>
-    <p>Sinh viên thực hiện: <strong>Đào Nhựt Quang Minh</strong> - MSSV: <strong>125000125</strong> - Đại học Lạc Hồng</p>
+    <div class="footer-top">
+      <div class="footer-grid">
+        
+        <!-- Cột 1: Thông tin thương hiệu -->
+        <div class="footer-col footer-col--brand">
+          <a href="#" class="footer-logo">
+            <div class="logo-icon-wrap"><i class="fa-solid fa-bolt-lightning"></i></div>
+            <div class="logo-text">Tech<span>World</span></div>
+          </a>
+          <p class="footer-desc">
+            TechWorld là hệ thống bán lẻ đồ điện tử, thiết bị công nghệ cao cấp hàng đầu Việt Nam. 
+            Nơi hội tụ những công nghệ tiên tiến nhất đáp ứng mọi nhu cầu làm việc, học tập và giải trí đỉnh cao.
+          </p>
+          <div class="footer-hotline">
+            <div class="hotline-icon"><i class="fa-solid fa-phone-volume"></i></div>
+            <div class="hotline-info">
+              <span>Tổng đài mua hàng &amp; CSKH (Miễn phí)</span>
+              <strong>1900 6868</strong>
+            </div>
+          </div>
+          <div class="footer-socials">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+          </div>
+        </div>
+
+        <!-- Cột 2: Hệ thống sản phẩm -->
+        <div class="footer-col">
+          <h3 class="footer-heading">Hệ Thống Sản Phẩm</h3>
+          <ul class="footer-links">
+            <li><a href="#c-laptop"><i class="fa-solid fa-angle-right"></i> Laptop Gaming &amp; Đồ Họa</a></li>
+            <li><a href="#c-laptop"><i class="fa-solid fa-angle-right"></i> MacBook &amp; Ultrabook AI</a></li>
+            <li><a href="#c-phone"><i class="fa-solid fa-angle-right"></i> Smartphone Flagship 5G</a></li>
+            <li><a href="#c-audio"><i class="fa-solid fa-angle-right"></i> Tai Nghe Chống Ồn &amp; Loa Hi-End</a></li>
+            <li><a href="#c-watch"><i class="fa-solid fa-angle-right"></i> Đồng Hồ Thông Minh Thể Thao</a></li>
+            <li><a href="#c-gaming"><i class="fa-solid fa-angle-right"></i> Gaming Gear &amp; Linh Kiện PC</a></li>
+          </ul>
+        </div>
+
+        <!-- Cột 3: Chính sách & Dịch vụ -->
+        <div class="footer-col">
+          <h3 class="footer-heading">Chính Sách &amp; Hỗ Trợ</h3>
+          <ul class="footer-links">
+            <li><a href="#thu-cu"><i class="fa-solid fa-angle-right"></i> Chính sách Thu Cũ Đổi Mới</a></li>
+            <li><a href="#cam-ket"><i class="fa-solid fa-angle-right"></i> Chính sách bảo hành 1 đổi 1</a></li>
+            <li><a href="#cam-ket"><i class="fa-solid fa-angle-right"></i> Quy trình giao hàng siêu tốc 2H</a></li>
+            <li><a href="#cam-ket"><i class="fa-solid fa-angle-right"></i> Hướng dẫn mua hàng trả góp 0%</a></li>
+            <li><a href="#footer"><i class="fa-solid fa-angle-right"></i> Tra cứu hóa đơn điện tử</a></li>
+            <li><a href="#footer"><i class="fa-solid fa-angle-right"></i> Chính sách bảo mật thông tin</a></li>
+          </ul>
+        </div>
+
+        <!-- Cột 4: Chứng nhận & Thông tin SV -->
+        <div class="footer-col footer-col--student">
+          <h3 class="footer-heading">Dự Án Bài Tập Lớn</h3>
+          <div class="student-info-card">
+            <div class="student-avatar">
+              <i class="fa-solid fa-user-graduate"></i>
+            </div>
+            <div class="student-details">
+              <p class="student-role">Sinh viên thực hiện:</p>
+              <h4 class="student-name">Đào Nhựt Quang Minh</h4>
+              <p class="student-code">MSSV: <strong>125000125</strong></p>
+              <p class="student-school"><i class="fa-solid fa-building-columns"></i> Đại học Lạc Hồng (LHU)</p>
+            </div>
+          </div>
+          
+          <div class="payment-methods">
+            <span class="pay-title">Phương thức thanh toán bảo mật:</span>
+            <div class="pay-icons">
+              <span class="pay-chip"><i class="fa-brands fa-cc-visa"></i> VISA</span>
+              <span class="pay-chip"><i class="fa-brands fa-cc-mastercard"></i> Master</span>
+              <span class="pay-chip"><i class="fa-brands fa-apple-pay"></i> Apple Pay</span>
+              <span class="pay-chip"><i class="fa-solid fa-qrcode"></i> VNPay-QR</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Thanh bản quyền dưới cùng -->
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <p>© 2026 <strong>TechWorld</strong> - Cửa Hàng Đồ Điện Tử &amp; Công Nghệ. Thiết kế giao diện đồ án bởi sinh viên <strong>Đào Nhựt Quang Minh</strong> (MSSV: <strong>125000125</strong>).</p>
+        <div class="footer-bottom-badges">
+          <span class="bct-badge"><i class="fa-solid fa-shield-halved"></i> Đã thông báo Bộ Công Thương</span>
+          <span class="ssl-badge"><i class="fa-solid fa-lock"></i> SSL 256-bit Secure</span>
+        </div>
+      </div>
+    </div>
   </footer>
 
-  <!-- Thư viện AOS JavaScript để khởi chạy hiệu ứng cuộn trang đáp ứng đúng tiêu chí đề thi -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 800,
-      once: true,
-      offset: 40
-    });
-
-    // Cập nhật lại vị trí AOS khi người dùng lọc tab hoặc danh mục
-    document.querySelectorAll('.filter-tab, .cat-link').forEach(function(el) {
-      el.addEventListener('click', function() {
-        setTimeout(function() {
-          AOS.refresh();
-        }, 100);
-      });
-    });
-  </script>
 </body>
 </html>
